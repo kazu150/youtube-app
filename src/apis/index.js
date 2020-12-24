@@ -1,6 +1,6 @@
 import axios from 'axios';
+import key from '../key.json';
 
-const KEY = 'AIzaSyBosrvZbJDb28FtdhfVuMOfxdouH26yPK8';
 
 const youtube = axios.create({
     baseURL: 'https://www.googleapis.com/youtube/v3'
@@ -9,7 +9,7 @@ const youtube = axios.create({
 const params = {
     part: 'snippet',
     maxResult: 40,
-    key: KEY,
+    key: key.API_KEY,
     regionCode: 'JP',
     type: 'video',
 }
