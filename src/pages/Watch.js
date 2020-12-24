@@ -14,6 +14,7 @@ const Watch = () => {
         const id = searchParams.get('v');
         if(id) {
             const [selected, related] = await Promise.all([fetchSelectedData(id), fetchRelatedData(id)])
+            console.log(selected, related)
             setGlobalState({type: 'SET_SELECTED', payload:{selected: selected.data.items.shift()}})
             setGlobalState({type: 'SET_RELATED', payload:{related: related.data.items}})
         }

@@ -10,7 +10,7 @@ const params = {
     part: 'snippet',
     maxResult: 40,
     key: key.API_KEY,
-    regionCode: 'JP',
+    regionCode: 'US',
     type: 'video',
 }
 
